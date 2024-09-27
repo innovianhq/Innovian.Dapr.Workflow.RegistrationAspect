@@ -10,7 +10,7 @@ trigger:
       - /Innovian.Dapr.Workflow.RegistrationAspect
       - /Innovian.Dapr.Workflow.RegistrationAspect.AspectTests
 stages:
-- stage: Build
+- stage: Test
   jobs:
   - job:
     workspace:
@@ -34,22 +34,19 @@ stages:
         command: 'restore'
         projects: '**/$(ProjectName).csproj'
         noCache: true
-
     - task: DotNetCoreCLI@2
       displayName: 'dotnet build'
       inputs:
         command: 'build'
         projects: '**/$(ProjectName).csproj'
         arguments: '--no-restore'
-
-    # Aspect testing
     - task: DotNetCoreCLI@2
       displayName: 'dotnet test'
       inputs:
         command: 'test'
         projects: '**/$(ProjectName).Tests.csproj'    
 - stage: Deployment
-  dependsOn: Build
+  dependsOn: Test
   jobs:
   - deployment: NugetDeployment
     displayName: "Deploying to NuGet"
@@ -58,7 +55,28 @@ stages:
       name: AzureBuildServers
       demands: Agent.OS -equals Windows_NT
   - job:
+    variables:
+    - name: BuildNumber
+      value: $(Build.BuildNumber)
+    - name: ProjectName
+      value: Innovian.Dapr.Workflow.RegistrationAspect
     steps:
+    - task: UseDotNet@2
+      inputs:
+        packageType: 'sdk'
+        version: '8.x'
+    - task: DotNetCoreCLI@2
+      displayName: 'dotnet restore'
+      inputs:
+        command: 'restore'
+        projects: '**/$(ProjectName).csproj'
+        noCache: true
+    - task: DotNetCoreCLI@2
+      displayName: 'dotnet build'
+      inputs:
+        command: 'build'
+        projects: '**/$(ProjectName).csproj'
+        arguments: '--no-restore'
     - task: DotNetCoreCLI@2
       displayName: 'dotnet pack'
       inputs:
