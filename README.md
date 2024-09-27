@@ -5,7 +5,7 @@
 </a>
 
 #### Innovian.Dapr.Workflow.RegistrationAspect
-[![Build Status](https://dev.azure.com/innovian/Innovian%20Open%20Source/_apis/build/status%2FMetalama%20Aspects%2FInnovian.Aspects.Dapr.WorkflowRegistration?branchName=main)](https://dev.azure.com/innovian/Innovian%20Open%20Source/_build/latest?definitionId=337&branchName=main)  [![NuGet](https://img.shields.io/nuget/v/Innovian.Dapr.Workflow.RegistrationAspect.svg)](https://www.nuget.org/packages/Innovian.Dapr.Workflow.RegistrationAspect/)
+[![Build Status](https://dev.azure.com/innovian/Innovian%20Open%20Source/_apis/build/status%2FMetalama%20Aspects%2Finnovianhq.Innovian.Dapr.Workflow.RegistrationAspect?branchName=main)](https://dev.azure.com/innovian/Innovian%20Open%20Source/_build/latest?definitionId=360&branchName=main)  [![NuGet](https://img.shields.io/nuget/v/Innovian.Dapr.Workflow.RegistrationAspect.svg)](https://www.nuget.org/packages/Innovian.Dapr.Workflow.RegistrationAspect/)
 
 This project is provided to the larger open-source community by [Innovian](https://innovian.net).
 
