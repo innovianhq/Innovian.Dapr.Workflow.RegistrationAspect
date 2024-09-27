@@ -32,7 +32,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Innovian.Aspects.Dapr.WorkflowRegistration\Innovian.Dapr.Workflow.RegistrationAspect.csproj" />
+    <ProjectReference Include="..\Innovian.Dapr.Workflow.RegistrationAspect\Innovian.Dapr.Workflow.RegistrationAspect.csproj" />
   </ItemGroup>
 
   <ItemGroup>
