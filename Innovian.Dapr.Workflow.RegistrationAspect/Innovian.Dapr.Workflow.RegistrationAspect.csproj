@@ -10,7 +10,7 @@
 		<Copyright>© 2024 Innovian Corporation</Copyright>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
-		<PackageProjectUrl>https://github.com/innovianhq/Innovian.Aspects.Dapr.WorkflowRegistration</PackageProjectUrl>
+		<PackageProjectUrl>https://github.com/innovianhq/Innovian.Dapr.Workflow.RegistrationAspect</PackageProjectUrl>
 		<Description>A Metalama-based aspect fabric designed to simplify registration of Dapr Workflow and Workflow Activities at compilation time rather than using reflection at startup time.</Description>
 		<Tags>Metalama Dapr Workflow Aspects Innovian</Tags>
 		<PackageIcon>InnovianLogo_NugetIcon.png</PackageIcon>
