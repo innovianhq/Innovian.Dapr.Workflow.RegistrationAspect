@@ -20,7 +20,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Dapr.Workflow" Version="1.14.0" />
+    <PackageReference Include="Dapr.Workflow" Version="1.15.1" />
     <PackageReference Include="Metalama.Framework" Version="2025.0.8" />
     <PackageReference Include="Metalama.Testing.AspectTesting" Version="2025.0.8" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
